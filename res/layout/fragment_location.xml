@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <Button
+        android:id="@+id/buttonShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="#fff"
+        android:background="@drawable/button_flat"
+        android:text="SHOW MY LOCATION" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonShow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@color/homepagetextcolor"
+            android:text="SMS" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/homepagetextcolor"
+            android:text="Whatsapp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="#fff"
+        android:background="@drawable/button_flat"
+        android:text="SELECT CONTACT" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonShow"
+        android:layout_below="@+id/buttonContact"
+        android:layout_marginTop="57dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="#fff"
+        android:background="@drawable/button_flat"
+        android:text="SEND MY LOCATION" />
+
+    <EditText
+        android:id="@+id/editTextnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

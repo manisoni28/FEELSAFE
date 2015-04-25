@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="94dp"
+        android:text="Hours"
+        android:textColor="@color/homepagetextcolor"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="Minutes"
+        android:textColor="@color/homepagetextcolor"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="Seconds"
+        android:textColor="@color/homepagetextcolor"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/hoursBox1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/trackme_timer_editext"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="@color/asbestos" />
+
+    <EditText
+        android:id="@+id/minutesBox1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBaseline="@+id/hoursBox1"
+        android:layout_alignBottom="@+id/hoursBox1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/trackme_timer_editext"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/asbestos"
+        android:textSize="28sp"
+        android:gravity="center" >
+  
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/secondsBox1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBaseline="@+id/minutesBox1"
+        android:layout_alignBottom="@+id/minutesBox1"
+        android:layout_alignLeft="@+id/textView3"
+        android:background="@drawable/trackme_timer_editext"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="@color/asbestos" />
+
+    <Button
+        android:id="@+id/trackmeStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:background="@drawable/button_flat_emarald"
+        android:padding="12dp"
+        android:textColor="@color/clouds"
+        android:text="START" />
+
+    <CheckBox
+        android:id="@+id/contactCheckBox01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactCheckBox02"
+        android:layout_below="@+id/minutesBox1"
+        android:layout_marginTop="29dp"
+        android:textColor="@color/homepagetextcolor"
+        android:text="CheckBox" />
+
+    <CheckBox
+        android:id="@+id/contactCheckBox02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactCheckBox01"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/homepagetextcolor"
+        android:text="CheckBox" />
+    
+</RelativeLayout>

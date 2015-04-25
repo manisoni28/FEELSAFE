@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item 
+        android:id="@+id/contacts_actionButton" 
+        android:title="contacts"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom" 
+        android:icon="@drawable/ic_action_group"></item>
+    <item 
+        android:id="@+id/tutorial_actionButton" 
+        android:title="tutorial"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom" 
+        android:icon="@drawable/ic_action_dock"></item>
+    
+   
+   
+</menu>

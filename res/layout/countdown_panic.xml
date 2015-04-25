@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_contacts_page" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="16dp"
+        android:text="Panic Mode running"
+        android:textColor="#d35400"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/pmCountdownStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:background="@drawable/button_flat_alizarin"
+        android:textColor="@color/clouds"
+        android:text="I am Safe" />
+
+    <TextView
+        android:id="@+id/pmCountdownTimerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pmCountdownStopButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="text"
+        android:textColor="@color/homepagetextcolor"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pmCountdownStopButton"
+        android:padding="16dp"
+        android:textColor="@color/asbestos"
+        android:text="Note:\n* 'Iam Safe' Button above stops Panic Mode\n* You Can minimise the App and use the phone normally\n* Dont press the ScreenLock button, but it is Ok to let the screen turn off by itself." />
+
+    	<ToggleButton
+        	android:id="@+id/pmCountdownFlashButton"
+        	android:layout_width="56dp"
+        	android:layout_height="56dp"
+        	android:layout_margin="16dp"
+        	android:background="@drawable/extras_round_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+           	android:drawableTop="@drawable/ic_fash"
+        	android:paddingTop="8dp"
+        	android:drawablePadding="-8dp" />
+
+    	<ToggleButton
+    	    android:id="@+id/pmCountdownSirenButton"
+    	    android:layout_width="56dp"
+        	android:layout_height="56dp"
+        	android:background="@drawable/extras_round_button"
+        	android:drawableTop="@drawable/ic_siren"
+        	android:paddingTop="8dp"
+        	android:drawablePadding="-8dp"
+    	    android:layout_alignBottom="@+id/pmCountdownFlashButton"
+    	    android:layout_toRightOf="@+id/pmCountdownFlashButton"
+    	     />
+
+</RelativeLayout>

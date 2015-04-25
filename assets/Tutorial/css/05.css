@@ -1,0 +1,77 @@
+@font-face{
+	font-family: minimal;
+	src: url(../../minimal.otf);
+}
+#heading{
+	width: 100%;
+	padding: 20px;
+	margin: 0px;
+	font-family: minimal;
+	background-color: #2ecc71;
+	color: #ecf0f1;
+	padding-left: 16px;
+	position: fixed;
+	-webkit-animation: slide-in-animation 1s;
+}
+#close{
+	position: fixed;
+	top:0;
+	font-family: minimal;
+	right:16px;
+	color: #ecf0f1;
+	text-decoration: none;
+}
+
+#controller{
+	
+	padding: 16px;
+	position:fixed;
+	bottom:0;
+	width: 100%;
+	background-color: #ecf0f1;
+	margin: 0px
+}
+#desc{
+	padding: 10px;
+	color: #7f8c8d;
+	font-size: 20px;
+}
+
+
+#indicator{
+	padding-top: 16px;
+	width: 10px;
+}
+
+#prev{
+	    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+#container{
+	-webkit-animation: opacity-animation-container 3s;
+}
+
+#highlight{
+ color :  #2ecc71;
+}
+#space{
+	padding-top: 100px;
+}
+#small{
+ color :  #34495e;
+}
+
+@-webkit-keyframes slide-in-animation {
+    0%   {padding-top:50px;}
+    60% {padding-top:10px;}
+    100% {padding-top:20px;}
+}
+@-webkit-keyframes opacity-animation-container{
+    0%   {opacity:0;}
+    33%   {opacity:0;}
+    100% {opacity:1;}
+}

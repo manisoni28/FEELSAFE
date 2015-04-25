@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+     >
+
+    <TextView
+        android:id="@+id/incomingSMSAlertHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView1"
+        android:background="@color/alizarin"
+        android:padding="8dp"
+        android:text="FeelSafe SOS Alert"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/clouds" />
+
+    <com.feelsafe.contacts.RoundedImageView
+        android:id="@+id/incomingSMSAlertPhoto"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/incomingSMSAlertHeading"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_action_person" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/incomingSMSAlertHeading"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher"
+        android:background="@color/alizarin" />
+
+    <TextView
+        android:id="@+id/incomingSMSAlertName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/incomingSMSAlertPhoto"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/incomingSMSAlertHeading"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/incomingSMSAlertPhoto"
+        android:padding="16dp"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/homepagetextcolor" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/incomingSMSAlertName"
+        android:layout_below="@+id/incomingSMSAlertName"
+        android:text="is in Emergency. Respond Immediately."
+        android:textColor="@color/homepagetextcolor"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/incomingSMSAlertCallButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/incomingSMSAlertPhoto"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_flat_emarald"
+        android:padding="8dp"
+        android:drawableLeft="@drawable/ic_action_call" />
+
+    <Button
+        android:id="@+id/incomingSMSAlertMessageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/incomingSMSAlertCallButton"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/incomingSMSAlertCallButton"
+        android:background="@drawable/button_flat_emarald"
+        android:padding="8dp"
+        android:drawableLeft="@drawable/ic_action_email" />
+
+    <Button
+        android:id="@+id/incomingSMSAlertLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/incomingSMSAlertCallButton"
+        android:layout_below="@+id/incomingSMSAlertCallButton"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_flat"
+        android:padding="12dp"
+        android:textColor="@color/clouds"
+        android:text="See Location" />
+
+    <Button
+        android:id="@+id/incomingSMSAlertCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/incomingSMSAlertLocationButton"
+        android:layout_alignBottom="@+id/incomingSMSAlertLocationButton"
+        android:layout_toRightOf="@+id/incomingSMSAlertMessageButton"
+        android:background="@drawable/button_flat_peter_river"
+        android:padding="12dp"
+        android:textColor="@color/clouds"
+        android:text="Dismiss" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/incomingSMSAlertLocationButton"
+        android:layout_below="@+id/incomingSMSAlertLocationButton"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/asbestos"
+        android:text="Note:This is an alert genrated from the SMS received"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

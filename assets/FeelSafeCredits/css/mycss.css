@@ -1,0 +1,76 @@
+@font-face
+{
+font-family: minimal;
+src: url(../../minimal.otf);
+}
+
+h1{
+	font-family: minimal;
+	color: #e74c3c;
+}
+
+#icon{
+	max-width: 100px;
+}
+#headingLine{
+	max-width:200px;
+}
+#photo{
+	margin: 10px;
+	max-width: 80px;
+	-webkit-animation: opacity-animation 1s
+}
+#block{
+	margin: 10px;
+	margin-top: 25px; 
+	background-color: #f5f9fa;
+	box-shadow: 5px 5px 0px #ecf0f1;
+	-webkit-animation: margin-animation 1s;
+}
+#blockTextName{
+	color:#7f8c8d;
+	font-size: 30px;
+	font-family: minimal;
+	margin: 0px;
+	-webkit-animation: opacity-animation-name 2s;
+}
+#blockTextDesc{
+	color:#7f8c8d;
+	font-size: 16px;
+	font-family: minimal;
+	margin: 0px;
+	-webkit-animation: opacity-animation-desc 3s;
+}
+
+#appDesc{
+	font-family: minimal;
+	font-size: 24px;
+	color: #7f8c8d;
+	margin:10px;
+}
+
+
+@-webkit-keyframes opacity-animation {
+    0%   {opacity:0;}
+    100% {opacity:1;}
+}
+@-webkit-keyframes opacity-animation-name {
+    0%   {opacity:0;}
+    50%   {opacity:0;}
+    100% {opacity:1;}
+}
+@-webkit-keyframes opacity-animation-desc {
+    0%   {opacity:0;}
+    66%   {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes margin-animation {
+    0%   {margin-top: 50px;}
+    100% {margin-top:25px;}
+}
+
+@keyframes opacity-animation {
+    0%   {opacity:0;}
+    100% {opacity:1;}
+}

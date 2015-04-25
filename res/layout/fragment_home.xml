@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    >
+
+   
+    <!-- panic mode button layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:baselineAligned="false"> 
+        
+        <!-- left side gap -->
+        <LinearLayout                            
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.20"
+        android:orientation="horizontal"
+        android:gravity="center" >
+            
+        </LinearLayout>
+        
+        <!-- view holding button -->
+        <LinearLayout
+            android:id="@+id/panicButtonView"
+         android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.60"
+      	android:orientation="vertical"
+        android:gravity="center|bottom">
+
+
+         <Button
+             android:id="@+id/panicModeButton"
+             
+             android:layout_width="196dp"
+             android:layout_height="196dp"
+             android:background="@drawable/panicmode_button"
+              android:text="PANIC\nMODE"
+          android:textColor="#fff"
+          android:textSize="24sp" />
+           <TextView
+                android:id="@+id/warningtextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:textColor="@color/pomegranate"
+                android:text="--Warnings :" />
+           
+            <TextView
+                android:id="@+id/gpstextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/amytheist"
+                android:text="GPS not turned on.          " />
+            <TextView
+                android:id="@+id/primetextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/belize_hole"
+                android:text="PrimeContacts not set!  " />
+
+            <TextView
+                android:id="@+id/whatsapptextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Whatsapp not installed!"
+                android:textColor="@color/nephritis" />
+          
+
+         </LinearLayout>
+         
+        <!-- right side gap -->
+         <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.20"
+        android:orientation="vertical"
+        android:gravity="center|top" >
+			 <TextView 
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:text="GPS"
+			     android:textColor="@color/homepagetextcolor"
+			     android:layout_marginTop="16dp"
+			     />
+             <Button
+                 android:id="@+id/gpsonoffbutton"
+                 android:layout_width="38dp"
+                 android:layout_height="38dp"
+                 android:background="@drawable/trackme_timer_editext"
+                 android:text="OFF"
+                 android:textColor="@color/homepagetextcolor"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            
+            
+        </LinearLayout>
+
+    </LinearLayout>  <!-- end of panic mode layout -->
+    
+    
+    <!-- bottom buttons main layout -->
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="horizontal">
+         
+         <!-- torch button view -->
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="0.25"
+             android:gravity="center"
+              >
+         <ToggleButton
+       		android:id="@+id/torchButton"
+       		android:layout_width="64dp"
+        	android:layout_height="64dp"
+        	android:background="@drawable/extras_round_button"
+        	android:drawableTop="@drawable/ic_fash"
+        	android:paddingTop="10dp"
+        	android:drawablePadding="-8dp"
+        	 />
+         </LinearLayout>
+         
+         <!-- Siren button View -->
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="0.25"
+             android:gravity="center"
+              >
+         <ToggleButton
+       		android:id="@+id/sirenButton"
+       		android:layout_width="64dp"
+        	android:layout_height="64dp"
+        	android:background="@drawable/extras_round_button"
+        	android:drawableTop="@drawable/ic_siren"
+        	android:paddingTop="10dp"
+        	android:drawablePadding="-8dp"
+        	 />
+         </LinearLayout>
+         
+         <!-- empty space between siren settings -->
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="0.25"
+              >
+         
+         </LinearLayout>
+         
+         
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="0.25"
+             android:gravity="center"
+              >
+         <Button
+       		android:id="@+id/settingsButton"
+       		android:layout_width="56dp"
+        	android:layout_height="56dp"
+        	android:background="@drawable/settings_round_button"
+        	android:drawableTop="@drawable/ic_action_settings"
+        	android:paddingTop="12dp"
+        	 />
+         </LinearLayout>
+         
+    </LinearLayout>
+</LinearLayout>

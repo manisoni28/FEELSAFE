@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_page_bg_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/clouds" >
+    <LinearLayout
+        android:id="@+id/tutorial_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/tutorialButton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="24dp"
+            android:textColor="#fff"
+            android:text="#tutorial"
+            android:background="@color/amytheist" />
+        
+    </LinearLayout>
+	<LinearLayout
+	    android:id="@+id/stories_layout"
+	     android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" >
+	     <Button
+            android:id="@+id/storiesButton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:textSize="24dp"
+            android:text="#Stories"
+            android:textColor="#fff"
+            android:background="@color/sunflower" />
+	</LinearLayout>
+	<LinearLayout
+	    android:id="@+id/tips_layout"  
+	    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" >
+	     <Button
+            android:id="@+id/tipsButton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:textSize="24dp"
+            android:text="#tips"
+             android:textColor="#fff"
+            android:background="@color/alizarin" />
+	</LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/credits_layout"
+	   android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+	       <Button
+            android:id="@+id/creditsButton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:textSize="18dp"
+            android:text="#credits"
+             android:textColor="#fff"
+            android:background="@color/peter_river" />
+	</LinearLayout>
+</LinearLayout>

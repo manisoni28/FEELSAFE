@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/dialogHeading_Enter_SMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Large Text"
+        android:textColor="@color/clouds"
+        android:padding="8dp"
+        android:background="@color/peter_river"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/dialogeditText_Enter_SMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="24dp"
+        android:maxLength="70"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dialogHeading_Enter_SMS"
+        android:layout_marginTop="15dp"
+        android:text="Please Enter the message to send."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dialogeditText_Enter_SMS"
+        android:text="Note: max 70 characters allowed."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/nulltextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dialog_enter_sms_cancel_button"
+        android:layout_alignBottom="@+id/dialog_enter_sms_cancel_button"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <Button
+        android:id="@+id/dialog_enter_sms_cancel_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/nulltextView3"
+        android:background="@drawable/button_flat_peter_river"
+        android:padding="12dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/dialog_Enter_SMS_OK_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dialog_enter_sms_cancel_button1"
+        android:layout_alignBottom="@+id/dialog_enter_sms_cancel_button1"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/dialog_enter_sms_cancel_button1"
+        android:background="@drawable/button_flat_emarald"
+        android:padding="12dp"
+        android:text="OK" />
+
+</RelativeLayout>

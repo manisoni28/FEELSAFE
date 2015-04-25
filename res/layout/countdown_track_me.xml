@@ -1,0 +1,78 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/backgroud_contacts_page" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="16dp"
+            android:text="Track-Me Mode running"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/homepagetextcolor" />
+
+        <ToggleButton
+            android:id="@+id/timerFlashButton"
+          	android:layout_width="56dp"
+        	android:layout_height="56dp"
+        	android:layout_margin="16dp"
+        	android:background="@drawable/extras_round_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+           	android:drawableTop="@drawable/ic_fash"
+        	android:paddingTop="8dp"
+        	android:drawablePadding="-8dp" />
+
+        <ToggleButton
+            android:id="@+id/timerSirenButton"
+           	android:layout_width="56dp"
+        	android:layout_height="56dp"
+        	android:layout_marginLeft="16dp"
+        	android:background="@drawable/extras_round_button"
+        	android:drawableTop="@drawable/ic_siren"
+        	android:paddingTop="8dp"
+        	android:drawablePadding="-8dp"
+            android:layout_alignLeft="@+id/finish_button"
+            android:layout_alignTop="@+id/timerFlashButton"
+             />
+
+        <Button
+            android:id="@+id/finish_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_flat_peter_river"
+            android:gravity="center"
+            android:textColor="@color/clouds"
+            android:text="Stop TrackMe" />
+
+        <TextView
+            android:id="@+id/countdown_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/finish_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:text="text"
+            android:textColor="@color/homepagetextcolor"
+            android:textSize="75sp" />
+
+        <Button
+            android:id="@+id/timerPanicModebutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/timerSirenButton"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/button_flat_alizarin"
+            android:padding="10dp"
+            android:text="Start\nPanic Mode"
+            android:textColor="@color/clouds" />
+
+    </RelativeLayout>

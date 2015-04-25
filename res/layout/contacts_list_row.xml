@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contact_listrow_style"
+    android:padding="5dp"
+     >
+
+    <com.feelsafe.contacts.RoundedImageView
+        android:id="@+id/contactImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_action_person" />
+
+    <Button
+        android:id="@+id/contactMessage"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/crown"
+        android:background="@drawable/ic_action_email" />
+
+    <Button
+        android:id="@+id/contactCallButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignBaseline="@+id/contactMessage"
+        android:layout_alignBottom="@+id/contactMessage"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/contactMessage"
+        android:background="@drawable/ic_action_call" />
+
+    <TextView
+        android:id="@+id/contactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/contactMessage"
+        android:layout_alignTop="@+id/contactImage"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/contactImage"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/asbestos" />
+
+    <Button
+        android:id="@+id/crown"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/contactName"
+        android:layout_below="@+id/contactImage"
+        android:background="@drawable/crown2" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FeelSafe</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="contact_page_label">Contacts</string>
+    <string name="edit_contact_page_label">Edit</string>
+
+</resources>

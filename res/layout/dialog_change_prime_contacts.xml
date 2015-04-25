@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/changePrimeDialogHeading"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Change Prime Contacts"
+        android:textColor="@color/clouds"
+        android:padding="8dp"
+        android:background="@color/peter_river"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="12dp"
+        android:layout_below="@+id/changePrimeDialogHeading"
+        android:text="You can select only two contacts as Prime Contacts. Uncheck old prime contact to check any new Contact."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ListView
+        android:id="@+id/changePrimeDialogListView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="12dp"
+        android:scrollbars="horizontal"
+        android:layout_below="@+id/textView1"
+        android:background="@drawable/backgroud_contacts_page" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/changeprimeCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/changePrimeSetButton"
+        android:layout_alignBottom="@+id/changePrimeSetButton"
+        android:layout_alignLeft="@+id/nulltextView2"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_flat_peter_river"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/changePrimeSetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/nulltextView2"
+        android:layout_below="@+id/changePrimeDialogListView"
+        android:background="@drawable/button_flat_normal_emarald"
+        android:text="Set" />
+
+    <TextView
+        android:id="@+id/nulltextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/changePrimeSetButton"
+        android:layout_alignBottom="@+id/changePrimeSetButton"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+</RelativeLayout>

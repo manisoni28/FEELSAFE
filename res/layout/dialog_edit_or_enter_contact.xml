@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/pickImageButton"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/editImageView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/settings_round_button"
+        android:drawableTop="@drawable/ic_action_camera"
+        android:paddingTop="2dp" />
+
+    <EditText
+        android:id="@+id/contactEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactEditText"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView1"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editImageView"
+        android:layout_marginTop="37dp"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nameEditText"
+        android:layout_marginTop="22dp"
+        android:text="Contact"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/contactEditText"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_flat_emarald"
+        android:padding="12dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/dialogCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/saveButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView3"
+        android:background="@drawable/button_flat_peter_river"
+        android:padding="12dp"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/dialogHeading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Large Text"
+        android:textColor="@color/clouds"
+        android:padding="8dp"
+        android:background="@color/peter_river"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:padding="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dialogHeading"
+        android:layout_marginTop="16dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <com.feelsafe.contacts.RoundedImageView
+        android:padding="12dp"
+        android:id="@+id/editImageView"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dialogMessage"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_action_person" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/saveButton"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+</RelativeLayout>

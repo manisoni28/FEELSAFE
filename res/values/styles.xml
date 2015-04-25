@@ -1,0 +1,69 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+    </style>
+    
+    <!-- Application theme. -->
+    <style name="ContactPageTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/ContactsActionBar</item>
+    </style>
+    <!-- Tutorials  theme. -->
+    <style name="TutorialPageTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/TutorialActionBar</item>
+    </style>
+    
+    
+    <!-- Action Bar Style -->
+    <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/alizarin</item>
+        <item name="android:backgroundStacked">@color/silver</item>
+        <item name="android:backgroundSplit">@color/alizarin</item>
+    </style>
+    
+    <!--Contacts Action Bar Style -->
+    <style name="ContactsActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/sneharagam</item>
+        <item name="android:backgroundSplit">@color/turqoise</item>
+    </style>
+    
+    <!--Tutorial Action Bar Style -->
+    <style name="TutorialActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/silver</item>
+        <item name="android:backgroundSplit">@color/silver</item>
+         <item name="android:backgroundStacked">@color/silver</item>
+    </style>
+    
+    <!--transparent theeme for alert -->
+    <style name="Theme.Transparent" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
+    <!--transparent theme for tabs -->
+    <style name="Theme.TabTransparent" parent="android:Theme">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>
